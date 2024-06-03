@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('WebView in PageView.builder'),
+          title: const Text('WebView in PageView.builder'),
         ),
         body: WebPageViewer(),
       ),
@@ -20,6 +20,8 @@ class MyApp extends StatelessWidget {
 }
 
 class WebPageViewer extends StatefulWidget {
+  const WebPageViewer({super.key});
+
   @override
   _WebPageViewerState createState() => _WebPageViewerState();
 }
